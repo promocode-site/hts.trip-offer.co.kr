@@ -3,6 +3,21 @@
   "siteName": "호텔스닷컴 할인코드 및 쿠폰",
   "baseUrl": "https://hts.trip-offer.co.kr",
   "postUrlPattern": "/blog/{slug}/",
-  "updated": "2026-09-23",
-  "posts": []
+  "updated": "2026-09-26",
+  "posts": [
+    {
+      "title": "호텔스닷컴 카드 할인 10월 안내, 9월과 달라진 부분",
+      "slug": "hotelscom-card-discount-october-update",
+      "date": "2026-09-26",
+      "description": "호텔스닷컴 카드 할인코드 중 9월에 끝나는 것과 10월에도 이어지는 것을 예약 기간 기준으로 정리했습니다.",
+      "image": "https://images.unsplash.com/photo-1673687779028-cff003cdab93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDc5NTczfDB8MXxzZWFyY2h8MXx8aG90ZWwlMjByb29tJTIwa2V5JTIwY2FyZHxlbnwxfDB8fHwxNzkwNDI1MzYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageCredit": {
+        "source": "unsplash",
+        "authorName": "Frugal Flyer",
+        "authorUrl": "https://unsplash.com/@frugalflyer?utm_source=blog-admin&utm_medium=referral",
+        "photoUrl": "https://unsplash.com/photos/a-close-up-of-a-business-card-on-a-bed-eALtkVMTCZ4?utm_source=blog-admin&utm_medium=referral",
+        "siteUrl": "https://unsplash.com?utm_source=blog-admin&utm_medium=referral"
+      }
+    }
+  ]
 }
