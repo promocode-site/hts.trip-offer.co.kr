@@ -3,8 +3,15 @@
   "siteName": "호텔스닷컴 할인코드 및 쿠폰",
   "baseUrl": "https://hts.trip-offer.co.kr",
   "postUrlPattern": "/blog/{slug}/",
-  "updated": "2026-09-26",
+  "updated": "2026-09-29",
   "posts": [
+    {
+      "title": "호텔스닷컴 할인코드, 한도 있는 코드와 한도 없는 코드 고르는 기준",
+      "slug": "hotelscom-discount-code-limit-guide",
+      "date": "2026-09-29",
+      "description": "호텔스닷컴 할인코드 중 한도가 있는 코드와 한도가 없는 코드의 차이를 정리하고, 예약 금액과 투숙 조건에 따라 어떤 코드를 고르면 좋은지 기준을 안내합니다.",
+      "image": ""
+    },
     {
       "title": "호텔스닷컴 카드 할인 10월 안내, 9월과 달라진 부분",
       "slug": "hotelscom-card-discount-october-update",
