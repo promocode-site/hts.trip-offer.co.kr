@@ -130,6 +130,16 @@ body{margin:0;background:#E7E7E2;color:#2B2D2F;font-family:-apple-system,BlinkMa
 .hcm-copy{font-size:12px;color:#A8AAA5;margin-top:12px}
 .hcm-end{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid #4A4D50;padding-top:16px}
 .hcm-end .hcm-copy{margin-top:0}
+.hcm-pages{grid-column:1/-1;min-width:0}
+.hcm-pages ul{list-style:none;display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.hcm-pages ul::-webkit-scrollbar{display:none}
+.hcm-pages a{display:block;white-space:nowrap;text-decoration:none;font-size:14px;font-weight:700;color:#E7E7E2;border:1px solid #6B6E70;border-radius:5px;padding:5px 11px}
+.hcm-pages a:hover{border-color:#C9D3B8;color:#C9D3B8}
+.hcm-pages a[aria-current="page"]{background:#C9D3B8;border-color:#C9D3B8;color:#2B2D2F}
+.hcm-links{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr);gap:18px;border-top:1px solid #4A4D50;padding-top:18px}
+@media (min-width:720px){
+.hcm-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+}
 @media (min-width:720px){
 .hcm-top{padding:40px 24px 32px}
 .hcm-top h1{font-size:38px}
@@ -200,6 +210,7 @@ body{margin:0;background:#E7E7E2;color:#2B2D2F;font-family:-apple-system,BlinkMa
 .hcl-tb tfoot tr.hcl-f1 td{color:#9A4200}
 .hcl-tb tfoot tr:last-child th,.hcl-tb tfoot tr:last-child td{border-bottom:0}
 .hcl-note{font-size:13px;margin-top:8px}
+.hcl-more{margin-top:28px}
 .hcl-res{background:var(--hcl-ink);border-radius:12px;padding:12px;color:var(--hcl-bg)}
 .hcl-res p{font-size:13px;line-height:1.55;padding:4px 4px 10px}
 .hcl-res dl{display:grid;gap:8px}
@@ -344,6 +355,7 @@ body{margin:0;background:#E7E7E2;color:#2B2D2F;font-family:-apple-system,BlinkMa
 .hcc-tb tfoot th{text-align:left;font-size:12px;line-height:1.35}
 .hcc-tb tfoot tr:last-child th,.hcc-tb tfoot tr:last-child td{border-bottom:0}
 .hcc-note{font-size:13px;margin-top:8px}
+.hcc-more{margin-top:28px}
 .hcc-res{background:var(--hcc-ink);color:var(--hcc-bg);border-radius:12px;padding:12px}
 .hcc-res h4{font-size:15px;font-weight:800;padding:2px 4px 8px}
 .hcc-res dl{display:grid;gap:8px}
@@ -578,6 +590,9 @@ body{margin:0;background:#E7E7E2;color:#2B2D2F;font-family:-apple-system,BlinkMa
 <!-- ===== 헤더 ===== -->
 <header class="hcm-top">
 <div class="hcm-top-in">
+<nav class="hcm-pages" aria-label="페이지 메뉴">
+<ul><li><a href="./" aria-current="page">홈</a></li><li><a href="discount-coupon/">호텔스닷컴 할인쿠폰</a></li><li><a href="card-discount/">호텔스닷컴 카드할인</a></li></ul>
+</nav>
 <div>
 <p class="hcm-brand">Hotels.com 할인코드 · 쿠폰 · 카드 할인</p>
 <h1>호텔스닷컴 할인코드 및 쿠폰</h1>
@@ -728,6 +743,7 @@ body{margin:0;background:#E7E7E2;color:#2B2D2F;font-family:-apple-system,BlinkMa
 </div>
 </div>
 
+<p class="hcl-more"><a class="hcl-btn" href="discount-coupon/">호텔스닷컴 할인쿠폰 전체 보기</a></p>
 
 </div>
 </section>
@@ -1065,6 +1081,8 @@ body{margin:0;background:#E7E7E2;color:#2B2D2F;font-family:-apple-system,BlinkMa
 </div>
 </div>
 
+<p class="hcc-more"><a class="hcc-btn" href="card-discount/">호텔스닷컴 카드할인 전체 보기</a></p>
+
 </div>
 </section>
 <div class="hcm-div" aria-hidden="true"><div class="hcm-div-in"><span></span><span></span><span></span><span class="on"></span><span></span><span></span></div></div>
@@ -1347,6 +1365,18 @@ body{margin:0;background:#E7E7E2;color:#2B2D2F;font-family:-apple-system,BlinkMa
 <li><a href="https://fft.agd-offer.co.kr/" target="_blank" rel="noopener">파페치 쿠폰</a></li>
 </ul>
 </div>
+<!--@FOOTER-LINKS-->
+<nav class="hcm-links" aria-label="할인 페이지 모음">
+<div>
+<p class="hcm-col-t">카드사별 할인</p>
+<ul><li><a href="nh-card/">NH농협카드</a></li><li><a href="kb-card/">KB국민카드</a></li><li><a href="hyundai-card/">현대카드</a></li><li><a href="hana-card/">하나카드</a></li><li><a href="bc-card/">BC카드</a></li><li><a href="woori-card/">우리카드</a></li><li><a href="tossbank-card/">토스뱅크카드</a></li><li><a href="lotte-card/">롯데카드</a></li><li><a href="samsung-card/">삼성카드</a></li><li><a href="visa-card/">비자카드</a></li><li><a href="mastercard-card/">마스터카드</a></li><li><a href="amex-card/">아멕스카드</a></li></ul>
+</div>
+<div>
+<p class="hcm-col-t">다른 할인코드</p>
+<ul><li><a href="tripcom/">트립닷컴 할인코드</a></li><li><a href="klook/">클룩 할인코드</a></li><li><a href="agoda/">아고다 할인코드</a></li><li><a href="myrealtrip/">마이리얼트립 할인코드</a></li><li><a href="kkday/">kkday 할인코드</a></li><li><a href="rakutentravel/">라쿠텐트래블 할인코드</a></li><li><a href="usimsa/">유심사 할인쿠폰</a></li></ul>
+</div>
+</nav>
+<!--@/FOOTER-LINKS-->
 <div class="hcm-end">
 <a class="hcm-totop" href="#top">맨 위로</a>
 <p class="hcm-copy">© 호텔스닷컴 할인코드 및 쿠폰</p>
